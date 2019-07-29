@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $( function() {
+        $( "#datepicker" ).datepicker();
+      } );
+    </script>
+    <title>Online booking</title>
+    <!-- <script
+			  src="http://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $("h1").culck(function(){
+          $(this).hide();
+        });
+
+        $("p").culck(function(){
+          $(this).hide();
+        });
+
+      });
+    </script> -->
+  </head>
+  <body>
+    <h1>Travelling online booking</h1>
+    <hr>
+
+    <form class="" action="../index.html" method="post">
+      <ul>
+        First Name:<input type="text" name="fName" value="" placeholder="First name *" required>
+      </ul>
+      <ul>
+        Middle Name:<input type="text" name="mName" value="" placeholder="Middle Name">
+      </ul>
+      <ul>
+        Last Name:<input type="text" name="lName" value="" placeholder="Last name *" required>
+      </ul>
+      <ul>
+        Address:<input type="text" name="address" value="" placeholder="Address *" required>
+      </ul>
+      <ul>
+        Email:<input type="email" name="email" value="" placeholder="Email address">
+      </ul>
+      <ul>
+        Mbile:<input type="number" name="mNumber" value="" placeholder="Mobile Number *" required>
+      </ul>
+      <ul>
+        Date:<input id="datepicker" type="text" name="date" value="" placeholder="Date *" required>
+      </ul>
+      <ul>
+        <input type="submit" value="Send">
+      </ul>
+    </form>
+    <hr>
+  </body>
+</html>
