@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <title>Travelers - Indra Bahadur Oli</title>
     <meta charset="utf-8">
@@ -8,8 +9,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
 
-    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
-          rel="stylesheet">
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -61,635 +61,120 @@
 
 
 <body>
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark new_nav">
-    <strong class="navbar-brand nav_font">Travelers</strong>
-    <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse nav_menu" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">
-                    Home <span class="sr-only">(current)</span>
-                </a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle"
-                   href="#" id="dropdown01"
-                   data-toggle="dropdown"
-                   aria-haspopup="true"
-                   aria-expanded="false">
-                    Destinations
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="#">Pokhara</a>
-                    <a class="dropdown-item" href="#">Chitwan</a>
-                    <a class="dropdown-item" href="#">Dang</a>
-                    <a class="dropdown-item" href="#">Lumbini</a>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark new_nav">
+        <strong class="navbar-brand nav_font">Travelers</strong>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav_menu" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        Home <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Destinations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Pokhara</a>
+                        <a class="dropdown-item" href="#">Chitwan</a>
+                        <a class="dropdown-item" href="#">Dang</a>
+                        <a class="dropdown-item" href="#">Lumbini</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutTra">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blogs">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign in</a>
+                </li>
+                <!-- Search start -->
+                <div id="myoverover" class="overover">
+                    <span class="closebtn" onclick="closeSearch()" title="Close overover">
+                        ×
+                    </span>
+                    <div class="overover-content">
+                        <form action="#">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit">
+                                <img src="images/search.png" alt="">
+                            </button>
+                        </form>
+                    </div>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#aboutTra">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#blogs">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Sign in</a>
-            </li>
-            <!-- Search start -->
-            <div id="myoverover" class="overover">
-                <span class="closebtn"
-                      onclick="closeSearch()"
-                      title="Close overover">
-                    ×
-                </span>
-                <div class="overover-content">
-                    <form action="#">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit">
-                            <img src="images/search.png" alt="">
-                        </button>
-                    </form>
-                </div>
-            </div>
 
-            <img style="margin-left:50px;"
-                 class="searchBtn"
-                 onclick="openSearch()"
-                 src="images/search.png" alt="Search">
+                <img style="margin-left:50px;" class="searchBtn" onclick="openSearch()" src="images/search.png"
+                    alt="Search">
 
-            <script>
-                function openSearch() {
-                    document.getElementById("myoverover").style.display = "block";
-                }
+                <script>
+                    function openSearch() {
+                        document.getElementById("myoverover").style.display = "block";
+                    }
 
-                function closeSearch() {
-                    document.getElementById("myoverover").style.display = "none";
-                }
-            </script>
+                    function closeSearch() {
+                        document.getElementById("myoverover").style.display = "none";
+                    }
+                </script>
 
-            <!-- search end -->
-        </ul>
-    </div>
-</nav>
+                <!-- search end -->
+            </ul>
+        </div>
+    </nav>
 
-<main role="main">
+    <main role="main">
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron background_image">
-        <div class="container new_slider">
-            <h1 class="display-3" style="font-variant: small-caps; color: white; margin-bottom:30px;">Never stop exploring</h1>
-            <p>This is a template for a simple marketing or informational website.
-                It includes a large callout called a jumbotron and three supporting
-                pieces of content. Use it as a starting point to create something
-                more unique.
-            </p>
-            <p>
-                <a class="btn btn-primary btn-lg"
-                   href="#cont-1" role="button"
-                   style="
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron background_image">
+            <div class="container new_slider">
+                <h1 class="display-3" style="font-variant: small-caps; color: white; margin-bottom:30px;">Never stop
+                    exploring</h1>
+                <p>This is a template for a simple marketing or informational website.
+                    It includes a large callout called a jumbotron and three supporting
+                    pieces of content. Use it as a starting point to create something
+                    more unique.
+                </p>
+                <p>
+                    <a class="btn btn-primary btn-lg" href="#cont-1" role="button" style="
                         margin-top:60px;
                         padding:15px;
                         padding-left:20px;
-                        padding-right:20px;"
-                >
-                    Learn more &raquo;
-                </a>
-            </p>
-        </div>
-    </div>
-
-    <div id="cont-1" class="container">
-        <!-- Example row of columns -->
-        <div class="row" style="margin-top:-100px;">
-            <div class="col-md-4  ">
-                <img class="img-fluid"
-                     src="images/guilherme-stecanella-587579-unsplash.jpg"
-                     alt="First Image">
-            </div>
-            <div class="col-md-4  ">
-                <img class="img-fluid"
-                     src="images/jora-orchau-1330176-unsplash.jpg"
-                     alt="First Image">
-            </div>
-            <div class="col-md-4  ">
-                <img class="img-fluid"
-                     src="images/guilherme-stecanella-588726-unsplash.jpg"
-                     alt="First Image">
-            </div>
-        </div>
-    </div> <!-- /container -->
-
-    <div class="container">
-        <!-- Example row of columns -->
-        <div class="row" style="margin-top:100px;">
-            <div class="col-md-4 features">
-                <h2>Air Ticketing</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Perferendis quis molestiae vitae eligendi at.
-                </p>
-                <p>
-                    <a class="btn" style="display: contents;" href="#" role="button">
-                        Learn more &raquo;
-                    </a>
-                </p>
-            </div>
-            <div class="col-md-4 features">
-                <h2>Cruises</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Perferendis quis molestiae vitae eligendi at.
-                </p>
-                <p>
-                    <a class="btn" style="display: contents;" href="#" role="button">
-                        Learn more &raquo;
-                    </a>
-                </p>
-            </div>
-            <div class="col-md-4 features" style="padding-bottom:100px;">
-                <h2>Tour Packages</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Perferendis quis molestiae vitae eligendi at.
-                </p>
-                <p>
-                    <a class="btn" style="display: contents;" href="#" role="button">
+                        padding-right:20px;">
                         Learn more &raquo;
                     </a>
                 </p>
             </div>
         </div>
-    </div> <!-- /container -->
 
-    <div class="jumbotron">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 style="
-                            text-align:center;
-                            padding-bottom:20px;"
-                    >
-                        Testimonials
-                    </h2>
+        <div id="cont-1" class="container">
+            <!-- Example row of columns -->
+            <div class="row" style="margin-top:-100px;">
+                <div class="col-md-4  ">
+                    <img class="img-fluid" src="images/guilherme-stecanella-587579-unsplash.jpg" alt="First Image">
+                </div>
+                <div class="col-md-4  ">
+                    <img class="img-fluid" src="images/jora-orchau-1330176-unsplash.jpg" alt="First Image">
+                </div>
+                <div class="col-md-4  ">
+                    <img class="img-fluid" src="images/guilherme-stecanella-588726-unsplash.jpg" alt="First Image">
                 </div>
             </div>
-            <div class="row">
+        </div> <!-- /container -->
 
-                <div class="col-md-6">
-                    <img class="img-fluid"
-                         src="images/florian-weichelt-1466042-unsplash.jpg"
-                         alt="First Image">
-                </div>
-
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-12"
-                             style="
-                                 margin-left: -100px;
-                                 margin-top: 40px;
-                                 max-width: 80%;
-                                 background-color:white;"
-                        >
-                            <p
-                                    style="
-                                    text-align:justify;
-                                    padding:25px;
-                                    font-family:sans;"
-                            >
-                                orem ipsum dolor sit amet consectetur adipisicing elit.
-                                Perferendis quis molestiae vitae eligendi at.
-                                orem ipsum dolor sit amet consectetur adipisicing elit.
-                                Perferendis quis molestiae vitae eligendi at.
-                                orem ipsum dolor sit amet consectetur adipisicing elit.
-                                Perferendis quis molestiae vitae eligendi at.
-                                orem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-            <div class="col-md-12">
-                <h2 style="text-align:center; padding-top:50px;">Our Destinations</h2>
-                <p style="text-align:center; padding-bottom:30px;">
-                    Choose Your Next Destination
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4  ">
-                <div class="contt">
-                    <img id="" class="img-fluid oimage"
-                         src="images/kal-visuals-763967-unsplash.jpg"
-                         alt="First Image" title="Camp fire">
-                    <div class="overlayy">
-                        <div class="imagecaption">Sukute Beach</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4  ">
-                <div class="contt">
-                    <img class="img-fluid oimage"
-                         src="images/riccardo-mion-1480376-unsplash.jpg"
-                         alt="First Image" title="Chitwan Jungle safari">
-                    <div class="overlayy">
-                        <div class="imagecaption">Chitwan</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4  " style="margin-bottom:25px;">
-                <div class="contt">
-                    <img class="img-fluid oimage"
-                         src="images/sean-pollock-199039-unsplash.jpg"
-                         alt="First Image" title="Hiking">
-                    <div class="overlayy">
-                        <div class="imagecaption" style="top:88%">Kalinchowk</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4  ">
-                <div class="contt">
-                    <img class="img-fluid oimage"
-                         src="images/nicole-harrington-545884-unsplash.jpg"
-                         alt="First Image" title="romance">
-                    <div class="overlayy">
-                        <div class="imagecaption" style="top:62%">Markhu</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4  ">
-                <div class="contt">
-                    <img class="img-fluid oimage"
-                         src="images/echo-grid-366223-unsplash.jpg"
-                         alt="First Image" title="solo adventure">
-                    <div class="overlayy">
-                        <div class="imagecaption" style="top:60%">Upper Mustang</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4  " style="margin-bottom:100px;">
-                <div class="contt">
-                    <img class="img-fluid oimage"
-                         src="images/cameron-kirby-106000-unsplash.jpg"
-                         alt="First Image" title="solo ride">
-                    <div class="overlayy">
-                        <div class="imagecaption" style="top:88%">Rara</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> <!-- /container -->
-
-    <!-- Video block -->
-    <div class="jumbotron video_image">
-        <div class="container" style="min-height:200px;">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <video
-                            autoplay
-                            muted
-                            loop
-                            controls
-                            id="myVideo"
-                            width="100%"
-                            height="auto"
-                    >
-                        <source
-                                src="images/VISIT NEPAL 2020 - TRAVEL NEPAL.mp4"
-                                type="video/mp4"
-                        >
-                        Your browser does not support HTML5 video.
-                    </video>
-                    <!-- <p style="text-align: center;">
-            <button class="btn-primary btn-lg" id="myBtn" onclick="myFunction()">Pause</button>
-          </p>
-            <script>
-            var video = document.getElementById("myVideo");
-            var btn = document.getElementById("myBtn");
-
-            function myFunction() {
-              if (video.paused) {
-                video.play();
-                btn.innerHTML = "Pause";
-              } else {
-                video.pause();
-                btn.innerHTML = "Play";
-              }
-            }
-          </script> -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="jumbotron" style="margin-top:-32px;">
         <div class="container">
             <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 style="text-align:center; padding-top:18px;">
-                        Our Services
-                    </h2>
-                    <p style="text-align:center; padding-bottom: 30px;">
-                        We Offer The Following Services
-                    </p>
-                </div>
-            </div>
-            <div class="row" style="margin-top:20px;">
+            <div class="row" style="margin-top:100px;">
                 <div class="col-md-4 features">
-                    <h3>Air Ticketing</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Perferendis quis molestiae vitae eligendi at.
-                    </p>
-                    <p>
-                        <a class="btn" style="display: contents;" href="#" role="button">
-                            Learn more &raquo;
-                        </a>
-                    </p>
-                </div>
-                <div class="col-md-4 features">
-                    <h3>Cruises</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Perferendis quis molestiae vitae eligendi at.
-                    </p>
-                    <p>
-                        <a class="btn" style="display: contents;" href="#" role="button">
-                            Learn more &raquo;
-                        </a>
-                    </p>
-                </div>
-                <div class="col-md-4 features">
-                    <h3>Tour Packages</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Perferendis quis molestiae vitae eligendi at.
-                    </p>
-                    <p>
-                        <a class="btn" style="display: contents;" href="#" role="button">
-                            Learn more &raquo;
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <div class="row" style="margin-top:20px;">
-                <div class="col-md-4 features">
-                    <h3>Hotel Accomodations</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Perferendis quis molestiae vitae eligendi at.
-                    </p>
-                    <p>
-                        <a class="btn" style="display: contents;" href="#" role="button">
-                            Learn more &raquo;
-                        </a>
-                    </p>
-                </div>
-                <div class="col-md-4 features">
-                    <h3>Sea Explorations</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Perferendis quis molestiae vitae eligendi at.
-                    </p>
-                    <p>
-                        <a class="btn" style="display: contents;" href="#" role="button">
-                            Learn more &raquo;
-                        </a>
-                    </p>
-                </div>
-                <div class="col-md-4 features">
-                    <h3>Ski Experiences</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Perferendis quis molestiae vitae eligendi at.
-                    </p>
-                    <p>
-                        <a class="btn" style="display: contents;" href="#" role="button">
-                            Learn more &raquo;
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container" id="blogs">
-        <!-- Example row of columns -->
-        <div class="row">
-            <div class="col-md-12">
-                <h2 style="text-align:center; padding-top:50px;">Our Blog</h2>
-                <p style="text-align:center; padding-bottom:30px;">
-                    See Our Daily News & Updates
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <img class="img-fluid"
-                     src="images/kinga-cichewicz-566375-unsplash.jpg"
-                     alt="First Image">
-                <h2 style="padding-top:20px;">How to Plan Your Vacation</h2>
-                <p>by Theresa Winston • Jan 18, 2019 at 2:00 pm • News</p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Natus eligendi nobis ea maiores sapiente veritatis reprehenderit
-                    suscipit quaerat rerum voluptatibus a eius.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <img class="img-fluid"
-                     src="images/fancycrave-355349-unsplash.jpg"
-                     alt="First Image">
-                <h2 style="padding-top:20px;">How to Plan Your Vacation</h2>
-                <p>by Theresa Winston • Jan 18, 2019 at 2:00 pm • News</p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Natus eligendi nobis ea maiores sapiente veritatis reprehenderit
-                    suscipit quaerat rerum voluptatibus a eius.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p
-                        style="
-                            text-align:center !important;
-                            padding-top: 20px;
-                            padding-bottom:50px;"
-                >
-                    <a
-                            class="btn btn-lg"
-                            style="border:1px solid"
-                            href="#"
-                            role="button"
-                            style="
-                                padding:15px;
-                                padding-left:20px;
-                                padding-right:20px;"
-                    >
-                        View All Blog Post
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div> <!-- /container -->
-
-    <hr>
-
-    <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-            <div class="col-md-12">
-                <h2 style="text-align:center; padding-top:50px;">
-                    Want To Travel With Us?
-                </h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p
-                        style="
-                            text-align:center !important;
-                            padding-top: 20px;
-                            padding-bottom:50px;"
-                >
-                    <button
-                            id="dialog"
-                            class="btn btn-primary btn-lg"
-                            role="button"
-                            style="
-                                padding:15px;
-                                padding-left:50px;
-                                padding-right:50px;"
-                            onclick="document.getElementById('id01').style.display='block'"
-                    >
-                        Book Now
-                    </button>
-                    <!-- <a class="btn btn-primary btn-lg" href="htm/booking.html" role="button" style="padding:15px; padding-left:50px; padding-right:50px;">Book Now</a> -->
-                </p>
-                <!-- booking form start -->
-
-                <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button> -->
-
-                <div id="id01" class="modal">
-                    <span
-                            onclick="document.getElementById('id01').style.display='none'"
-                            class="close" title="Close Modal">
-                        &times;
-                    </span>
-                    <form class="modal-content" action="#">
-                        <div class="container">
-                            <h1 style="text-align:center;">Booking Now</h1>
-                            <p style="text-align:center;">
-                                Please fill in this form to booking Destination
-                            </p>
-                            <hr>
-                            <label for="fullname"><b>Full Name</b></label>
-                            <input
-                                    id="fullname"
-                                    type="text"
-                                    placeholder="Enter your full name"
-                                    name="fullname"
-                                    required
-                            >
-
-                            <label for="address"><b>Address</b></label>
-                            <input
-                                    id="address"
-                                    type="text"
-                                    placeholder="Enter address"
-                                    name="address"
-                                    required
-                            >
-
-                            <label for="email"><b>Email</b></label>
-                            <input
-                                    id="email"
-                                    type="text"
-                                    placeholder="Enter Email"
-                                    name="email"
-                                    required
-                            >
-
-                            <label for="destination"><b>Destination</b></label>
-                            <select id="destination" name="destination">
-                                <option value="pokhara">Pokhara</option>
-                                <option value="chitwan">Chitwan</option>
-                                <option value="lumbini">Lumbini</option>
-                                <option value="dang">Dang</option>
-                            </select>
-
-                            <p>
-                                By booking a destination you should agree to our
-                                <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
-
-                                <input
-                                        type="checkbox"
-                                        checked="checked"
-                                        name="agreeTnC"
-                                        style="margin-bottom:15px"
-                                        required
-                                >
-                                Agree
-                            </p>
-
-                            <div class="clearfix">
-                                <button
-                                        type="button"
-                                        onclick="document.getElementById('id01').style.display='none'" class="cancelbtn formbtn">Cancel</button>
-                                <button
-                                        type="submit"
-                                        class="bookingbtn formbtn"
-                                >
-                                    Book
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <script>
-                    // Get the modal
-                    var modal = document.getElementById('id01');
-
-                    // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    }
-                </script>
-                <!-- Booking form close -->
-            </div>
-        </div>
-    </div> <!-- /container -->
-
-    <div class="jumbotron" style="margin-bottom: 0px;">
-        <div class="container">
-            <!-- Example row of columns -->
-            <div class="row" style="margin-top:20px;">
-                <div class="col-md-4" id="aboutTra">
-                    <h4>About Travelers</h4>
+                    <h2>Air Ticketing</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Perferendis quis molestiae vitae eligendi at.
                     </p>
@@ -699,49 +184,449 @@
                         </a>
                     </p>
                 </div>
-                <div class="col-md-4">
-                    <h4 style="text-align:center;">Navigations <hr></h4>
-                    <div class="row">
-                        <div class="col-md-6">
+                <div class="col-md-4 features">
+                    <h2>Cruises</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Perferendis quis molestiae vitae eligendi at.
+                    </p>
+                    <p>
+                        <a class="btn" style="display: contents;" href="#" role="button">
+                            Learn more &raquo;
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-4 features" style="padding-bottom:100px;">
+                    <h2>Tour Packages</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Perferendis quis molestiae vitae eligendi at.
+                    </p>
+                    <p>
+                        <a class="btn" style="display: contents;" href="#" role="button">
+                            Learn more &raquo;
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div> <!-- /container -->
 
-                            <a class="dropdown-item" href="#">Home</a>
-                            <a class="dropdown-item" href="#">Destination</a>
-                            <a class="dropdown-item" href="#">Services</a>
-                            <a class="dropdown-item" href="#">About</a>
-                        </div>
-                        <div class="col-md-6">
-                            <a class="dropdown-item" href="#">About Us</a>
-                            <a class="dropdown-item" href="#">Privacy Policy</a>
-                            <a class="dropdown-item" href="#">Contact Us</a>
-                            <a class="dropdown-item" href="#">Discount</a>
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 style="
+                            text-align:center;
+                            padding-bottom:20px;">
+                            Testimonials
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="images/florian-weichelt-1466042-unsplash.jpg" alt="First Image">
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12" style="
+                                 margin-left: -100px;
+                                 margin-top: 40px;
+                                 max-width: 80%;
+                                 background-color:white;">
+                                <p style="
+                                    text-align:justify;
+                                    padding:25px;
+                                    font-family:sans;">
+                                    orem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perferendis quis molestiae vitae eligendi at.
+                                    orem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perferendis quis molestiae vitae eligendi at.
+                                    orem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perferendis quis molestiae vitae eligendi at.
+                                    orem ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" id="contact">
-                    <h4>Subscribe Newsletter</h4>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="text-align:center; padding-top:50px;">Our Destinations</h2>
+                    <p style="text-align:center; padding-bottom:30px;">
+                        Choose Your Next Destination
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4  ">
+                    <div class="contt">
+                        <img id="" class="img-fluid oimage" src="images/kal-visuals-763967-unsplash.jpg"
+                            alt="First Image" title="Camp fire">
+                        <div class="overlayy">
+                            <div class="imagecaption">Sukute Beach</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  ">
+                    <div class="contt">
+                        <img class="img-fluid oimage" src="images/riccardo-mion-1480376-unsplash.jpg" alt="First Image"
+                            title="Chitwan Jungle safari">
+                        <div class="overlayy">
+                            <div class="imagecaption">Chitwan</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  " style="margin-bottom:25px;">
+                    <div class="contt">
+                        <img class="img-fluid oimage" src="images/sean-pollock-199039-unsplash.jpg" alt="First Image"
+                            title="Hiking">
+                        <div class="overlayy">
+                            <div class="imagecaption" style="top:88%">Kalinchowk</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4  ">
+                    <div class="contt">
+                        <img class="img-fluid oimage" src="images/nicole-harrington-545884-unsplash.jpg"
+                            alt="First Image" title="romance">
+                        <div class="overlayy">
+                            <div class="imagecaption" style="top:62%">Markhu</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  ">
+                    <div class="contt">
+                        <img class="img-fluid oimage" src="images/echo-grid-366223-unsplash.jpg" alt="First Image"
+                            title="solo adventure">
+                        <div class="overlayy">
+                            <div class="imagecaption" style="top:60%">Upper Mustang</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  " style="margin-bottom:100px;">
+                    <div class="contt">
+                        <img class="img-fluid oimage" src="images/cameron-kirby-106000-unsplash.jpg" alt="First Image"
+                            title="solo ride">
+                        <div class="overlayy">
+                            <div class="imagecaption" style="top:88%">Rara</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /container -->
+
+        <!-- Video block -->
+        <div class="jumbotron video_image">
+            <div class="container" style="min-height:200px;">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <iframe width="80%" height="430"
+                            src="https://www.youtube.com/embed/ut-U-4m42aQ?controls=1&autoplay=1&loop=1&mute=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron" style="margin-top:-32px;">
+            <div class="container">
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 style="text-align:center; padding-top:18px;">
+                            Our Services
+                        </h2>
+                        <p style="text-align:center; padding-bottom: 30px;">
+                            We Offer The Following Services
+                        </p>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:20px;">
+                    <div class="col-md-4 features">
+                        <h3>Air Ticketing</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Perferendis quis molestiae vitae eligendi at.
+                        </p>
+                        <p>
+                            <a class="btn" style="display: contents;" href="#" role="button">
+                                Learn more &raquo;
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 features">
+                        <h3>Cruises</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Perferendis quis molestiae vitae eligendi at.
+                        </p>
+                        <p>
+                            <a class="btn" style="display: contents;" href="#" role="button">
+                                Learn more &raquo;
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 features">
+                        <h3>Tour Packages</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Perferendis quis molestiae vitae eligendi at.
+                        </p>
+                        <p>
+                            <a class="btn" style="display: contents;" href="#" role="button">
+                                Learn more &raquo;
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:20px;">
+                    <div class="col-md-4 features">
+                        <h3>Hotel Accomodations</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Perferendis quis molestiae vitae eligendi at.
+                        </p>
+                        <p>
+                            <a class="btn" style="display: contents;" href="#" role="button">
+                                Learn more &raquo;
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 features">
+                        <h3>Sea Explorations</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Perferendis quis molestiae vitae eligendi at.
+                        </p>
+                        <p>
+                            <a class="btn" style="display: contents;" href="#" role="button">
+                                Learn more &raquo;
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 features">
+                        <h3>Ski Experiences</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Perferendis quis molestiae vitae eligendi at.
+                        </p>
+                        <p>
+                            <a class="btn" style="display: contents;" href="#" role="button">
+                                Learn more &raquo;
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="blogs">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="text-align:center; padding-top:50px;">Our Blog</h2>
+                    <p style="text-align:center; padding-bottom:30px;">
+                        See Our Daily News & Updates
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-fluid" src="images/kinga-cichewicz-566375-unsplash.jpg" alt="First Image">
+                    <h2 style="padding-top:20px;">How to Plan Your Vacation</h2>
+                    <p>by Theresa Winston • Jan 18, 2019 at 2:00 pm • News</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Perferendis quis molestiae vitae eligendi at.
+                        Natus eligendi nobis ea maiores sapiente veritatis reprehenderit
+                        suscipit quaerat rerum voluptatibus a eius.
                     </p>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input
-                                class="form-control mr-sm-2"
-                                type="email"
-                                placeholder="Enter Email here"
-                                aria-label="Send"
-                                title="example@yourdomain.com"
-                        >
-                        <button
-                                class="btn btn-outline-success my-2 my-sm-0"
-                                type="submit"
-                        >
-                            Send
-                        </button>
-                    </form>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="images/fancycrave-355349-unsplash.jpg" alt="First Image">
+                    <h2 style="padding-top:20px;">How to Plan Your Vacation</h2>
+                    <p>by Theresa Winston • Jan 18, 2019 at 2:00 pm • News</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Natus eligendi nobis ea maiores sapiente veritatis reprehenderit
+                        suscipit quaerat rerum voluptatibus a eius.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="
+                            text-align:center !important;
+                            padding-top: 20px;
+                            padding-bottom:50px;">
+                        <a class="btn btn-lg" style="border:1px solid" href="#" role="button" style="
+                                padding:15px;
+                                padding-left:20px;
+                                padding-right:20px;">
+                            View All Blog Post
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div> <!-- /container -->
 
-                    <!-- popup form start -->
-                    <button 
-                            style="
+        <hr>
+
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="text-align:center; padding-top:50px;">
+                        Want To Travel With Us?
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="
+                            text-align:center !important;
+                            padding-top: 20px;
+                            padding-bottom:50px;">
+                        <button id="dialog" class="btn btn-primary btn-lg" role="button" style="
+                                padding:15px;
+                                padding-left:50px;
+                                padding-right:50px;" onclick="document.getElementById('id01').style.display='block'">
+                            Book Now
+                        </button>
+                        <!-- <a class="btn btn-primary btn-lg" href="htm/booking.html" role="button" style="padding:15px; padding-left:50px; padding-right:50px;">Book Now</a> -->
+                    </p>
+                    <!-- booking form start -->
+
+                    <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button> -->
+
+                    <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                            title="Close Modal">
+                            &times;
+                        </span>
+                        <form class="modal-content" action="#">
+                            <div class="container">
+                                <h1 style="text-align:center;">Booking Now</h1>
+                                <p style="text-align:center;">
+                                    Please fill in this form to booking Destination
+                                </p>
+                                <hr>
+                                <label for="fullname"><b>Full Name</b></label>
+                                <input id="fullname" type="text" placeholder="Enter your full name" name="fullname"
+                                    required>
+
+                                <label for="address"><b>Address</b></label>
+                                <input id="address" type="text" placeholder="Enter address" name="address" required>
+
+                                <label for="email"><b>Email</b></label>
+                                <input id="email" type="text" placeholder="Enter Email" name="email" required>
+
+                                <label for="destination"><b>Destination</b></label>
+                                <select id="destination" name="destination">
+                                    <option value="pokhara">Pokhara</option>
+                                    <option value="chitwan">Chitwan</option>
+                                    <option value="lumbini">Lumbini</option>
+                                    <option value="dang">Dang</option>
+                                </select>
+
+                                <p>
+                                    By booking a destination you should agree to our
+                                    <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+
+                                    <input type="checkbox" checked="checked" name="agreeTnC" style="margin-bottom:15px"
+                                        required>
+                                    Agree
+                                </p>
+
+                                <div class="clearfix">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn formbtn">Cancel</button>
+                                    <button type="submit" class="bookingbtn formbtn">
+                                        Book
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <script>
+                        // Get the modal
+                        var modal = document.getElementById('id01');
+
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function (event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+                    <!-- Booking form close -->
+                </div>
+            </div>
+        </div> <!-- /container -->
+
+        <div class="jumbotron" style="margin-bottom: 0px;">
+            <div class="container">
+                <!-- Example row of columns -->
+                <div class="row" style="margin-top:20px;">
+                    <div class="col-md-4" id="aboutTra">
+                        <h4>About Travelers</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Perferendis quis molestiae vitae eligendi at.
+                        </p>
+                        <p>
+                            <a class="btn" style="display: contents;" href="#" role="button">
+                                Learn more &raquo;
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 style="text-align:center;">Navigations
+                            <hr>
+                        </h4>
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <a class="dropdown-item" href="#">Home</a>
+                                <a class="dropdown-item" href="#">Destination</a>
+                                <a class="dropdown-item" href="#">Services</a>
+                                <a class="dropdown-item" href="#">About</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="dropdown-item" href="#">About Us</a>
+                                <a class="dropdown-item" href="#">Privacy Policy</a>
+                                <a class="dropdown-item" href="#">Contact Us</a>
+                                <a class="dropdown-item" href="#">Discount</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" id="contact">
+                        <h4>Subscribe Newsletter</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Perferendis quis molestiae vitae eligendi at.
+                        </p>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="email" placeholder="Enter Email here"
+                                aria-label="Send" title="example@yourdomain.com">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                Send
+                            </button>
+                        </form>
+
+                        <!-- popup form start -->
+                        <button style="
                                 background-color: #555;
                                 color: white;
                                 padding: 16px 20px;
@@ -751,92 +636,71 @@
                                 position:fixed;
                                 bottom: 23px;
                                 right: 28px;
-                                width: 293px;" 
-                            onclick="openForm()"
-                    >
-                        Send Message
-                    </button>
+                                width: 293px;" onclick="openForm()">
+                            Send Message
+                        </button>
 
-                    <div class="form-popup" id="myForm">
-                        <form action="#" class="form-container">
-                            <h3 style="text-align:center;">Instance Message</h3>
-                            <hr>
+                        <div class="form-popup" id="myForm">
+                            <form action="#" class="form-container">
+                                <h3 style="text-align:center;">Instance Message</h3>
+                                <hr>
 
-                            <input
-                                    type="text"
-                                    placeholder="Enter Full Name"
-                                    name="fullname"
-                                    required
-                            >
+                                <input type="text" placeholder="Enter Full Name" name="fullname" required>
 
-                            <input
-                                    type="text"
-                                    placeholder="Enter Email"
-                                    name="email"
-                                    required
-                            >
+                                <input type="text" placeholder="Enter Email" name="email" required>
 
-                            <textarea 
-                                    placeholder="Enter your message" 
-                                    name="message" 
-                                    rows="3" 
-                                    cols="27" 
-                                    required 
+                                <textarea placeholder="Enter your message" name="message" rows="3" cols="27" required
                                     style="
                                         width: 100%;
                                         padding: 15px;
                                         margin: 5px 0 22px 0;
                                         display: inline-block;
                                         border: none;
-                                        background: #f1f1f1;"
-                            >
+                                        background: #f1f1f1;">
                             </textarea>
 
-                            <button type="submit" class="btn">Send</button>
-                            <button 
-                                    type="button" 
-                                    class="btn cancel" 
-                                    onclick="closeForm()"
-                            >
-                                Close
-                            </button>
-                        </form>
+                                <button type="submit" class="btn">Send</button>
+                                <button type="button" class="btn cancel" onclick="closeForm()">
+                                    Close
+                                </button>
+                            </form>
+                        </div>
+
+                        <script>
+                            function openForm() {
+                                document.getElementById("myForm").style.display = "block";
+                            }
+                            function closeForm() {
+                                document.getElementById("myForm").style.display = "none";
+                            }
+                        </script>
+                        <!-- popup form close -->
+
                     </div>
-
-                    <script>
-                        function openForm() {
-                            document.getElementById("myForm").style.display = "block";
-                        }
-                        function closeForm() {
-                            document.getElementById("myForm").style.display = "none";
-                        }
-                    </script>
-                    <!-- popup form close -->
-
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12" style="padding-top:55px;">
-                    <p style="text-align:center;">
-                        Copyright ©2019 All rights reserved |
-                        <a href="https://www.ibo.com.np/" target="_blank">IBO</a>
-                    </p>
+                <div class="row">
+                    <div class="col-md-12" style="padding-top:55px;">
+                        <p style="text-align:center;">
+                            Copyright ©2019 All rights reserved |
+                            <a href="https://github.com/indraoli429" target="_blank">IBO</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-</main>
+    </main>
 
-<script>
-    $( function() {
-        $( "#dialog" ).dialog();
-    } );
-</script>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $("#dialog").dialog();
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
